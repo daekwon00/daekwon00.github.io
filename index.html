@@ -1,36 +1,188 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daekwon's GitHub Pages</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>유대권 소개</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(135deg, #004aad, #0075ff);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px 40px;
+    }
+    section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+    }
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      border-left: 4px solid #0075ff;
+      padding-left: 8px;
+    }
+    .highlight {
+      font-weight: 600;
+      color: #004aad;
+    }
+    ul {
+      list-style: none;
+      margin-top: 8px;
+    }
+    ul li {
+      margin-bottom: 6px;
+      padding-left: 16px;
+      position: relative;
+    }
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #0075ff;
+    }
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .tag {
+      font-size: 0.85rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #eef4ff;
+      color: #004aad;
+    }
+    .contact a {
+      color: #0075ff;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+      padding: 20px 0 30px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>GitHub Pages 테스트</h1>
-        <p>배포가 성공적으로 완료되었습니다! 🎉</p>
-        <p>현재 시간: <span id="time"></span></p>
-    </div>
-    <script>
-        document.getElementById('time').textContent = new Date().toLocaleString('ko-KR');
-    </script>
+  <header>
+    <h1>유대권 (Yoo Dae Kwon)</h1>
+    <p>프로그램 개발자 · 백엔드 & 프론트엔드 · AI에 진심인 개발자</p>
+  </header>
+
+  <main>
+    <!-- 소개 -->
+    <section id="about">
+      <h2>소개</h2>
+      <p>
+        안녕하세요, <span class="highlight">프로그램 개발자 유대권</span>입니다.<br />
+        Java 백엔드와 웹 프론트엔드를 기반으로 업무 시스템을 개발해 왔으며,<br />
+        최근에는 <span class="highlight">AI와 클라우드</span>를 접목한 서비스 아키텍처에 큰 관심을 두고
+        역량을 확장하고 있습니다.
+      </p>
+    </section>
+
+    <!-- 경력 및 관심 분야 -->
+    <section id="career">
+      <h2>역할 & 관심 분야</h2>
+      <ul>
+        <li>Java 기반 백엔드 개발 (Spring / Spring Boot 중심)</li>
+        <li>웹 프론트엔드 개발 (JSP, HTML, Thymeleaf, Vue, React 등)</li>
+        <li>AI 관련 서비스 기획 및 PoC, RAG·Agent 등 최신 기술 스터디</li>
+        <li>지속적으로 학습하며 성장하는 개발자 커리어 지향</li>
+      </ul>
+    </section>
+
+    <!-- 기술 스택 -->
+    <section id="skills">
+      <h2>기술 스택</h2>
+      <p>다음과 같은 기술들을 활용해 프로젝트를 수행해 왔습니다.</p>
+      <div class="tag-list">
+        <span class="tag">Java</span>
+        <span class="tag">Spring / Spring Boot</span>
+        <span class="tag">REST API</span>
+        <span class="tag">JSP / HTML / CSS</span>
+        <span class="tag">Thymeleaf</span>
+        <span class="tag">Vue.js</span>
+        <span class="tag">React</span>
+        <span class="tag">Git</span>
+        <span class="tag">AI · LLM 스터디</span>
+      </div>
+    </section>
+
+    <!-- 가치관 -->
+    <section id="values">
+      <h2>개발자로서의 방향성</h2>
+      <ul>
+        <li>“개발은 천직”이라는 마음으로 꾸준히 성장하는 삶을 추구합니다.</li>
+        <li>새로운 기술을 실제 서비스와 비즈니스에 연결하는 것을 중요하게 생각합니다.</li>
+        <li>팀과 사용자 모두에게 도움이 되는 실질적인 결과물을 만드는 것을 목표로 합니다.</li>
+      </ul>
+    </section>
+
+    <!-- 연락처 -->
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>
+          <strong>Email</strong> :
+          <a href="mailto:yoosw00@gmail.com">yoosw00@gmail.com</a>
+        </li>
+        <li>
+          <strong>GitHub</strong> :
+          <a href="https://github.com/daekwon00" target="_blank" rel="noopener noreferrer">
+            https://github.com/daekwon00
+          </a>
+        </li>
+        <li>
+          <strong>LinkedIn</strong> :
+          <a href="https://www.linkedin.com/in/daekwon-yoo-1b3765170/"
+            target="_blank" rel="noopener noreferrer">
+            https://www.linkedin.com/in/daekwon-yoo-1b3765170/
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Yoo Dae Kwon. All rights reserved.
+  </footer>
+
+  <script>
+    // 푸터에 현재 연도 표시
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

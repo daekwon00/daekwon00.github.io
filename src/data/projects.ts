@@ -3,34 +3,51 @@ export interface Project {
   description: string;
   tags: string[];
   liveUrl?: string;
-  githubUrl: string;
+  githubUrl?: string;
+  period?: string;
+  client?: string;
+  role?: string;
   isMain?: boolean;
   badge?: string;
 }
 
 export const projectsData: Project[] = [
   {
-    title: 'RAG Chat System',
+    title: 'AI 시스템 통합 아키텍처 구축',
     description:
-      '문서 기반 질의응답 AI 채팅 시스템. 사용자가 업로드한 문서를 벡터 임베딩으로 변환하고, GPT-4o를 활용한 RAG(Retrieval-Augmented Generation) 파이프라인으로 정확한 답변을 생성합니다.',
-    tags: ['Next.js 14', 'TypeScript', 'Supabase pgvector', 'GPT-4o', 'Vercel AI SDK', 'TailwindCSS'],
-    liveUrl: '#',
+      'PyTorch/TensorFlow 딥러닝 학습, LangChain RAG 금융 규제 문서 검색 시스템 설계, Spring Boot + FastAPI 하이브리드 아키텍처 연구, 로컬 LLM(Ollama) 및 클라우드 API 비교, MLOps 파이프라인 구축, AI 에이전트 개발.',
+    tags: ['Python', 'PyTorch', 'LangChain', 'ChromaDB', 'FastAPI', 'OpenAI API'],
     githubUrl: 'https://github.com/daekwon00',
+    period: '2026.01 ~ 진행중',
+    role: 'AI 개발',
     isMain: true,
-    badge: 'Deployed',
+    badge: 'In Progress',
   },
   {
-    title: 'Python ML Basics',
+    title: '신한은행 AI음성뱅킹',
     description:
-      'Python 기반 머신러닝 기초 프로젝트 모음. 주식 데이터 분석, 신용평가 모델, PyTorch MNIST 분류기 등 ML 파이프라인 전반을 학습하고 구현.',
-    tags: ['Python', 'Scikit-learn', 'PyTorch', 'Pandas'],
-    githubUrl: 'https://github.com/daekwon00',
+      '모바일 앱에서 음성 인식을 통한 금융 기능 연동. STT/TTS 엔진, 자연어 처리(NLU) 기반 대화형 UI 구현. React 프론트엔드 및 인터페이스 프로토콜 설계. PL 역할 수행.',
+    tags: ['React', 'JavaScript', 'Oracle', 'STT/TTS'],
+    period: '2022.08 ~ 2023.11',
+    client: '신한은행',
+    role: 'PL/개발',
   },
   {
-    title: 'LangChain RAG',
+    title: '미래에셋생명 MSA 신규 개발',
     description:
-      'Python 기반 RAG 시스템. LangChain과 ChromaDB를 활용한 벡터 검색, HuggingFace 임베딩 모델 통합, 문서 청킹 및 검색 최적화.',
-    tags: ['Python', 'LangChain', 'ChromaDB', 'HuggingFace'],
-    githubUrl: 'https://github.com/daekwon00',
+      '모놀리식에서 MSA 구조로 전환. Spring Batch 기반 보험계약 데이터 처리, 정산 로직, 예약 실행 등 주요 배치 프로세스 설계 및 개발.',
+    tags: ['Java', 'Spring Boot', 'Spring Batch', 'Oracle', 'MSA'],
+    period: '2024.04 ~ 2024.08',
+    client: '미래에셋생명',
+    role: 'PL/개발',
+  },
+  {
+    title: '교통안전공단 클라우드 전환',
+    description:
+      'TAGO 대중교통 정보 시스템 클라우드 이관. NHN Cloud 기반 Outer Architecture 구성, VPC/네트워크, Kafka/DB 서버, 망연계 솔루션 및 방화벽 정책 설정.',
+    tags: ['NHN Cloud', 'Docker', 'Kafka', 'PostgreSQL', 'Shell Script'],
+    period: '2025.09 ~ 2025.12',
+    client: '교통안전공단',
+    role: 'MSP',
   },
 ];

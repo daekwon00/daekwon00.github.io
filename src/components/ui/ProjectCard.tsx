@@ -13,6 +13,9 @@ export default function ProjectCard({ project }: { project: Project }) {
               <h3 className="text-2xl font-bold">{project.title}</h3>
               {project.badge && <span className="badge-deployed">{project.badge}</span>}
             </div>
+            {project.period && (
+              <p className="text-sm text-indigo-600 font-medium mb-2">{project.period}</p>
+            )}
             <p className="text-zinc-500 mb-6 max-w-2xl">{project.description}</p>
             <div className="flex flex-wrap gap-2 mb-6">
               {project.tags.map((tag) => (
@@ -26,15 +29,17 @@ export default function ProjectCard({ project }: { project: Project }) {
                   <ArrowRightIcon className="w-4 h-4" />
                 </a>
               )}
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary text-sm"
-              >
-                <GitHubIcon className="w-4 h-4" />
-                GitHub
-              </a>
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary text-sm"
+                >
+                  <GitHubIcon className="w-4 h-4" />
+                  GitHub
+                </a>
+              )}
             </div>
           </div>
         </div>
@@ -46,7 +51,25 @@ export default function ProjectCard({ project }: { project: Project }) {
     <ScrollReveal>
       <div className="project-card">
         <div className="p-6">
-          <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <h3 className="text-xl font-bold">{project.title}</h3>
+            {project.role && (
+              <span className="text-xs font-medium text-indigo-600 bg-indigo-50 px-2 py-1 rounded-full">
+                {project.role}
+              </span>
+            )}
+          </div>
+          {(project.period || project.client) && (
+            <div className="flex flex-wrap items-center gap-3 text-sm text-zinc-400 mb-3">
+              {project.period && <span>{project.period}</span>}
+              {project.client && (
+                <>
+                  <span className="text-zinc-300">|</span>
+                  <span>{project.client}</span>
+                </>
+              )}
+            </div>
+          )}
           <p className="text-zinc-500 text-sm mb-4">{project.description}</p>
           <div className="flex flex-wrap gap-2 mb-4">
             {project.tags.map((tag) => (
@@ -55,15 +78,17 @@ export default function ProjectCard({ project }: { project: Project }) {
               </SkillTag>
             ))}
           </div>
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-indigo-600 hover:text-indigo-800 transition-colors inline-flex items-center gap-1"
-          >
-            GitHub
-            <ArrowRightIcon className="w-3 h-3" />
-          </a>
+          {project.githubUrl && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-indigo-600 hover:text-indigo-800 transition-colors inline-flex items-center gap-1"
+            >
+              GitHub
+              <ArrowRightIcon className="w-3 h-3" />
+            </a>
+          )}
         </div>
       </div>
     </ScrollReveal>

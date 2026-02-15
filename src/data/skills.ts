@@ -8,26 +8,31 @@ export const skillsData: SkillCategory[] = [
   {
     title: 'AI & Machine Learning',
     iconKey: 'brain',
-    tags: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'LangChain', 'HuggingFace', 'OpenAI API', 'pgvector', 'ChromaDB'],
+    tags: ['PyTorch', 'TensorFlow', 'LangChain', 'OpenAI API', 'ChromaDB', 'RAG', 'MLOps'],
   },
   {
-    title: 'Languages',
+    title: 'Backend',
     iconKey: 'code',
-    tags: ['Python', 'TypeScript', 'JavaScript', 'Java'],
+    tags: ['Java', 'Spring Boot', 'Spring Batch', 'Python', 'FastAPI', 'MyBatis'],
+  },
+  {
+    title: 'Frontend',
+    iconKey: 'globe',
+    tags: ['React', 'Vue.js', 'TypeScript', 'JavaScript', 'Next.js'],
+  },
+  {
+    title: 'Database',
+    iconKey: 'settings',
+    tags: ['Oracle', 'PostgreSQL', 'MySQL', 'MS-SQL', 'Tibero', 'ChromaDB'],
   },
   {
     title: 'Cloud & Infra',
     iconKey: 'cloud',
-    tags: ['Azure', 'AWS', 'GCP', 'Docker', 'Vercel', 'Firebase'],
+    tags: ['AWS', 'NHN Cloud', 'Docker', 'Nginx', 'GitLab', 'Synology NAS'],
   },
   {
-    title: 'Web',
-    iconKey: 'globe',
-    tags: ['Next.js', 'React', 'TailwindCSS', 'Spring Boot'],
-  },
-  {
-    title: 'Tools',
+    title: 'Tools & Auth',
     iconKey: 'settings',
-    tags: ['Claude Code', 'Cursor IDE', 'n8n', 'Git'],
+    tags: ['Cursor IDE', 'IntelliJ', 'GPKI/NPKI', 'OAuth2.0', 'JWT', 'Git'],
   },
 ];

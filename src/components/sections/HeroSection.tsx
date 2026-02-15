@@ -16,7 +16,7 @@ export default function HeroSection() {
               Enterprise AI Solutions Architect
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="gradient-text">27년의 엔터프라이즈 경험,</span>
+              <span className="gradient-text">29년의 엔터프라이즈 경험,</span>
               <br />
               <span className="text-zinc-800">AI의 미래를 설계합니다</span>
             </h1>

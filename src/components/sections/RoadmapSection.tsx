@@ -6,7 +6,7 @@ const statusConfig: Record<RoadmapStatus, { label: string; badgeClass: string; b
   completed: {
     label: 'COMPLETED',
     badgeClass: 'roadmap-badge-completed',
-    borderClass: 'border-white/5',
+    borderClass: 'border-zinc-200',
   },
   progress: {
     label: 'IN PROGRESS',
@@ -16,7 +16,7 @@ const statusConfig: Record<RoadmapStatus, { label: string; badgeClass: string; b
   planned: {
     label: 'PLANNED',
     badgeClass: 'roadmap-badge-planned',
-    borderClass: 'border-white/5',
+    borderClass: 'border-zinc-200',
   },
 };
 
@@ -37,7 +37,7 @@ export default function RoadmapSection() {
 
               return (
                 <div key={phase.phase} className="roadmap-step flex-1 relative">
-                  <div className={`bg-white/[0.03] border ${config.borderClass} rounded-xl p-6`}>
+                  <div className={`bg-white border ${config.borderClass} rounded-xl p-6`}>
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-sm font-semibold text-zinc-500">
                         Phase {phase.phase}
@@ -49,7 +49,7 @@ export default function RoadmapSection() {
                       </span>
                     </div>
                     <h3 className="font-bold mb-2">{phase.title}</h3>
-                    <p className="text-sm text-zinc-400">{phase.description}</p>
+                    <p className="text-sm text-zinc-500">{phase.description}</p>
                   </div>
                   {!isLast && <div className="roadmap-connector hidden md:block"></div>}
                 </div>

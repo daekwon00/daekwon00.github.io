@@ -66,8 +66,8 @@ export default function Navbar() {
               onClick={(e) => handleNavClick(e, item.id)}
               className={`nav-link text-sm transition-colors ${
                 activeId === item.id
-                  ? 'text-indigo-400'
-                  : 'text-zinc-400 hover:text-indigo-400'
+                  ? 'text-indigo-600'
+                  : 'text-zinc-500 hover:text-indigo-600'
               }`}
             >
               {item.label}
@@ -91,7 +91,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`mobile-menu fixed top-0 right-0 w-64 h-full bg-[#09090b] z-40 flex flex-col pt-20 px-8 gap-6 md:hidden ${
+        className={`mobile-menu fixed top-0 right-0 w-64 h-full bg-white shadow-xl z-40 flex flex-col pt-20 px-8 gap-6 md:hidden ${
           menuOpen ? 'open' : ''
         }`}
       >
@@ -100,7 +100,7 @@ export default function Navbar() {
             key={item.id}
             href={`#${item.id}`}
             onClick={(e) => handleNavClick(e, item.id)}
-            className="text-lg text-zinc-300 hover:text-indigo-400 transition-colors"
+            className="text-lg text-zinc-600 hover:text-indigo-600 transition-colors"
           >
             {item.label}
           </a>

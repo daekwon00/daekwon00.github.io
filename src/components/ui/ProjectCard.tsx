@@ -13,7 +13,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               <h3 className="text-2xl font-bold">{project.title}</h3>
               {project.badge && <span className="badge-deployed">{project.badge}</span>}
             </div>
-            <p className="text-zinc-400 mb-6 max-w-2xl">{project.description}</p>
+            <p className="text-zinc-500 mb-6 max-w-2xl">{project.description}</p>
             <div className="flex flex-wrap gap-2 mb-6">
               {project.tags.map((tag) => (
                 <SkillTag key={tag}>{tag}</SkillTag>
@@ -47,7 +47,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       <div className="project-card">
         <div className="p-6">
           <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-          <p className="text-zinc-400 text-sm mb-4">{project.description}</p>
+          <p className="text-zinc-500 text-sm mb-4">{project.description}</p>
           <div className="flex flex-wrap gap-2 mb-4">
             {project.tags.map((tag) => (
               <SkillTag key={tag} small>
@@ -59,7 +59,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-indigo-400 hover:text-indigo-300 transition-colors inline-flex items-center gap-1"
+            className="text-sm text-indigo-600 hover:text-indigo-800 transition-colors inline-flex items-center gap-1"
           >
             GitHub
             <ArrowRightIcon className="w-3 h-3" />

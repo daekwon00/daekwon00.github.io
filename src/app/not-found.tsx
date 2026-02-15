@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#0a0a0f]">
+    <div className="min-h-screen flex items-center justify-center bg-white">
       <div className="text-center px-6">
         <h1 className="text-6xl font-extrabold gradient-text mb-4">404</h1>
-        <p className="text-xl text-slate-400 mb-8">페이지를 찾을 수 없습니다.</p>
+        <p className="text-xl text-zinc-500 mb-8">페이지를 찾을 수 없습니다.</p>
         <Link href="/" className="btn-primary">
           홈으로 돌아가기
         </Link>

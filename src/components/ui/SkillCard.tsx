@@ -10,7 +10,7 @@ export default function SkillCard({ category }: { category: SkillCategory }) {
     <ScrollReveal>
       <div className="skill-card">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500/20 to-violet-500/20 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-100 to-purple-100 flex items-center justify-center">
             <Icon />
           </div>
           <h3 className="font-bold">{category.title}</h3>

@@ -18,9 +18,9 @@ export default function HeroSection() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
               <span className="gradient-text">27년의 엔터프라이즈 경험,</span>
               <br />
-              <span className="text-white">AI의 미래를 설계합니다</span>
+              <span className="text-zinc-800">AI의 미래를 설계합니다</span>
             </h1>
-            <p className="text-lg text-zinc-400 mb-8 max-w-xl mx-auto lg:mx-0">
+            <p className="text-lg text-zinc-500 mb-8 max-w-xl mx-auto lg:mx-0">
               금융·공공·클라우드 분야의 엔터프라이즈 역량을 AI/ML에 접목하여, 실무에 바로 적용
               가능한 AI 솔루션을 만들어갑니다.
             </p>
@@ -48,7 +48,7 @@ export default function HeroSection() {
                 href="https://github.com/daekwon00"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-zinc-500 hover:text-indigo-400 transition-colors"
+                className="text-zinc-400 hover:text-indigo-600 transition-colors"
                 aria-label="GitHub"
               >
                 <GitHubIcon />
@@ -57,14 +57,14 @@ export default function HeroSection() {
                 href="https://www.linkedin.com/in/daekwon-yoo-1b3765170/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-zinc-500 hover:text-indigo-400 transition-colors"
+                className="text-zinc-400 hover:text-indigo-600 transition-colors"
                 aria-label="LinkedIn"
               >
                 <LinkedInIcon />
               </a>
               <a
                 href="mailto:yoosw00@gmail.com"
-                className="text-zinc-500 hover:text-indigo-400 transition-colors"
+                className="text-zinc-400 hover:text-indigo-600 transition-colors"
                 aria-label="Email"
               >
                 <EmailIcon />

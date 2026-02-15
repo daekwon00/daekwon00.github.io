@@ -5,7 +5,7 @@ import SkillCard from '@/components/ui/SkillCard';
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="py-24 bg-[#06060a]">
+    <section id="skills" className="py-24 bg-zinc-50">
       <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal>
           <SectionLabel>Skills</SectionLabel>

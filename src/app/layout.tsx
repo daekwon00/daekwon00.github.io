@@ -4,12 +4,12 @@ import './globals.css';
 export const metadata: Metadata = {
   title: '유대권 | Enterprise AI Solutions Architect',
   description:
-    '27년 엔터프라이즈 IT 경험을 가진 개발자. Java/Spring/Cloud에서 AI 개발로 전환 중. 금융, 공공, 클라우드 역량을 AI에 접목합니다.',
+    '금융·웹 엔터프라이즈 역량을 가진 개발자. Java/Spring/Cloud에서 AI 개발로 전환 중. 금융, 공공, 클라우드 역량을 AI에 접목합니다.',
   keywords: 'AI, Machine Learning, Enterprise, Java, Spring, Cloud, Portfolio, 유대권',
   authors: [{ name: '유대권' }],
   openGraph: {
     title: '유대권 | Enterprise AI Solutions Architect',
-    description: '27년 엔터프라이즈 IT 경험을 AI의 미래에 접목합니다.',
+    description: '금융·웹 엔터프라이즈 역량을 AI의 미래에 접목합니다.',
     type: 'website',
     url: 'https://daekwon00.github.io',
   },

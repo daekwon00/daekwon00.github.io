@@ -12,7 +12,7 @@ export default function AboutSection() {
             <p className="text-lg text-zinc-500 leading-relaxed mb-6">
               1997년 삼성전기 통신연구소에서 개발 커리어를 시작하여, 모토로라코리아 CDMA 개발, 자체
               경매 플랫폼 운영, 3D 프린터 시스템/영상처리, 그리고 신한은행·우리은행·미래에셋 등
-              금융권 프로젝트까지 다양한 도메인에서 29년간 현장 경험을 쌓아왔습니다.
+              금융권 프로젝트까지 다양한 도메인에서 풍부한 현장 경험을 쌓아왔습니다.
             </p>
             <p className="text-lg text-zinc-500 leading-relaxed">
               2026년부터 AI/ML 개발로의 전환을 시작하여, PyTorch, LangChain RAG, AI Agent 개발에

@@ -16,12 +16,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm run dev     # 개발 서버 (localhost:3000)
-npm run build   # 정적 빌드 → out/ 디렉토리 생성
-npm start       # 프로덕션 서버 (빌드 후)
+npm run dev     # 개발 서버 (localhost:3000) — 평소 개발 시 이것만 사용
+npm run build   # 정적 빌드 → out/ 생성 (push 전 빌드 에러 확인용, 선택적)
+npm start       # Next.js 프로덕션 서버 (SSR/API Routes 등 서버 기능이 있는 프로젝트용)
 ```
 
-No linter or test runner is configured.
+- 배포는 `git push` 하면 GitHub Actions가 자동으로 build + deploy 수행
+- `npm start`는 이 프로젝트에서 사용하지 않음 — static export(`output: 'export'`)라 서버 없이 정적 파일만 배포. SSR이나 API Routes를 사용하는 Next.js 프로젝트에서 프로덕션 서버를 구동할 때 쓰는 명령
+- Linter, test runner 미설정
 
 ## Architecture
 

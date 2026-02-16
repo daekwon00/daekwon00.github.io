@@ -17,7 +17,7 @@ export const projectsData: Project[] = [
     description:
       'PyTorch/TensorFlow 딥러닝 학습, LangChain RAG 금융 규제 문서 검색 시스템 설계, Spring Boot + FastAPI 하이브리드 아키텍처 연구, 로컬 LLM(Ollama) 및 클라우드 API 비교, MLOps 파이프라인 구축, AI 에이전트 개발.',
     tags: ['Python', 'PyTorch', 'LangChain', 'ChromaDB', 'FastAPI', 'OpenAI API'],
-    githubUrl: 'https://github.com/daekwon00',
+    githubUrl: 'https://github.com/daekwon00/ai-learning',
     period: '2026.01 ~ 진행중',
     role: 'AI 개발',
     isMain: true,

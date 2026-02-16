@@ -1,4 +1,4 @@
-import { EmailIcon, GitHubIcon, LinkedInIcon } from '@/components/icons';
+import { EmailIcon, GitHubIcon, LinkedInIcon, GlobeIcon } from '@/components/icons';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 import SectionLabel from '@/components/ui/SectionLabel';
 
@@ -38,6 +38,15 @@ export default function ContactSection() {
             >
               <LinkedInIcon />
               LinkedIn
+            </a>
+            <a
+              href="https://udksoft.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary"
+            >
+              <GlobeIcon className="w-5 h-5" />
+              UDKsoft
             </a>
           </div>
         </ScrollReveal>

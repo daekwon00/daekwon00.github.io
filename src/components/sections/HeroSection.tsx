@@ -1,4 +1,4 @@
-import { ChevronDownIcon, GitHubIcon, LinkedInIcon, EmailIcon } from '@/components/icons';
+import { ChevronDownIcon, GitHubIcon, LinkedInIcon, EmailIcon, GlobeIcon } from '@/components/icons';
 
 export default function HeroSection() {
   return (
@@ -15,8 +15,8 @@ export default function HeroSection() {
             <div className="section-label justify-center lg:justify-start">
               Enterprise AI Solutions Architect
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              <span className="gradient-text">29년의 엔터프라이즈 경험,</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl font-extrabold leading-tight mb-6">
+              <span className="gradient-text">금융·웹 엔터프라이즈 역량,</span>
               <br />
               <span className="text-zinc-800">AI의 미래를 설계합니다</span>
             </h1>
@@ -68,6 +68,15 @@ export default function HeroSection() {
                 aria-label="Email"
               >
                 <EmailIcon />
+              </a>
+              <a
+                href="https://udksoft.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zinc-400 hover:text-indigo-600 transition-colors"
+                aria-label="UDKsoft"
+              >
+                <GlobeIcon className="w-5 h-5" />
               </a>
             </div>
           </div>

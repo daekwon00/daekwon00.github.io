@@ -30,14 +30,13 @@ export default function RoadmapSection() {
         </ScrollReveal>
 
         <ScrollReveal>
-          <div className="flex flex-col md:flex-row gap-6 md:gap-0">
-            {roadmapData.map((phase, idx) => {
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {roadmapData.map((phase) => {
               const config = statusConfig[phase.status];
-              const isLast = idx === roadmapData.length - 1;
 
               return (
-                <div key={phase.phase} className="roadmap-step flex-1 relative">
-                  <div className={`bg-white border ${config.borderClass} rounded-xl p-6`}>
+                <div key={phase.phase} className="roadmap-step">
+                  <div className={`bg-white border ${config.borderClass} rounded-xl p-6 h-full`}>
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-sm font-semibold text-zinc-500">
                         Phase {phase.phase}
@@ -51,7 +50,6 @@ export default function RoadmapSection() {
                     <h3 className="font-bold mb-2">{phase.title}</h3>
                     <p className="text-sm text-zinc-500">{phase.description}</p>
                   </div>
-                  {!isLast && <div className="roadmap-connector hidden md:block"></div>}
                 </div>
               );
             })}

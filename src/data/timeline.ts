@@ -14,7 +14,7 @@ export const timelineData: TimelineItem[] = [
   },
   {
     period: '2008 ~ 2015',
-    title: '자체 사업 운영 (에이비씨옥션)',
+    title: '웹 플랫폼 사업 운영 (에이비씨옥션)',
     description:
       '부동산 경매 플랫폼 구축·운영. 웹 풀스택 개발(ASP.NET, MS-SQL), DB 설계, 검색엔진 시스템 개발. 법원·공매 데이터 자동 수집, 20개 테마 사이트 자동화 운영. PG사 결제 연동 및 관리자 백오피스 구축.',
   },

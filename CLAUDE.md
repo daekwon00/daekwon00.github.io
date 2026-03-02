@@ -71,3 +71,7 @@ ScrollProgress → Navbar → Hero → About → Journey → Projects → Skills
 ### Static Assets
 
 `public/images/` — favicon.svg, profile.png. `next.config.ts`에서 `images.unoptimized: true` 설정 (정적 export 호환).
+
+## 옵시디안 문서
+
+- `~/Documents/ObsidianVaults/DkVault/1-projects/02_DkDev/09_daekwon00.github.io/`
